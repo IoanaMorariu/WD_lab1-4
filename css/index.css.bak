@@ -1,0 +1,149 @@
+/* Element Selector */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+		background-color: #333;
+		color: #fff;
+		padding: 1em 0;
+		text-align: center;
+		transition: background-color 0.3s ease; /* Added transition effect */
+		}
+
+		header:hover {
+			color: #ff6b6b; /* Schimbarea culorii la hover */
+		}
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        article {
+		background-color: #fff;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		margin-bottom: 20px;
+		max-width: 300px;
+		padding: 20px;
+		text-align: center;
+		transition: box-shadow 0.3s ease; /* Added transition effect */
+	}
+
+	article:hover {
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Change the box shadow on hover */
+	}
+
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+		
+		@keyframes footerAnimation {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+			animation: footerAnimation 1s infinite alternate; /* Footer animation */
+        }
+
+        /* Class Selector */
+        .post-title {
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        /* ID Selector */
+        #post-date {
+            font-style: italic;
+        }
+
+        /* Attribute Selector */
+        article:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease-in-out;
+        }
+		
+		nav a {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #555;
+    position: relative;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff6b6b;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6b6b;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+}
+.img-small {
+    width: 200px; /* Lățimea imaginii */
+    height: auto; /* Înălțimea se ajustează automat pentru a menține proporțiile originale */
+    /* Alte stiluri pot fi adăugate aici, cum ar fi margin, padding, border, etc. */
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0.5em 0;
+    }
+
+    nav a {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}

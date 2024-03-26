@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom Beauty - About</title>
+	<link rel="stylesheet" type="text/css" href="../css/about.css">
+</head>
+<body>
+    <header>
+        <h1>About Blossom Beauty</h1>
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="about.html">About</a> 
+			<a href="form.html">Form</a> 
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <img src="../img/img1.jpg" alt="Blossom Beauty Florist">
+            <h2>About Us</h2>
+            <p>At Blossom Beauty, we are passionate about creating stunning floral arrangements that bring joy to our customers...</p>
+        </section>
+
+        <section>
+            <h2>Our Story</h2>
+            <p>Founded in [Year], Blossom Beauty Florist has been serving the community with exquisite floral designs...</p>
+        </section>
+
+        <section>
+            <h2>Our Team</h2>
+            <p>Meet our talented team of florists who are dedicated to crafting unique and memorable arrangements...</p>
+        </section>
+
+        <section>
+            <h2>Services</h2>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Wedding Arrangements</td>
+                    <td>Custom floral designs for weddings, including bouquets, centerpieces, and venue decorations.</td>
+                </tr>
+                <tr>
+                    <td>Event Floral Decor</td>
+                    <td>Elegant floral arrangements tailored to suit any special event or occasion.</td>
+                </tr>
+                <tr>
+                    <td>Corporate Floral Services</td>
+                    <td>Weekly floral arrangements for corporate offices, hotels, and restaurants.</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Blossom Beauty Florist - Blog</p>
+    </footer>
+</body>
+</html>

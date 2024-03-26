@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom Beauty - Blog</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to Blossom Beauty - Blog</h1>
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="about.html">About</a> 
+            <a href="form.html">Form</a> 
+        </nav>
+    </header>
+
+    <main>
+        <!-- Blog Post 1 -->
+        <article>
+            <h2 class="post-title">Embrace Spring with Our Fresh Floral Arrangements</h2>
+            <p id="post-date">By Blossom Beauty Florist, Posted on March 26, 2024</p>
+            <img src="../img/img4.png" alt="Spring Floral Arrangement">
+            <p>As the weather warms up, it's time to bring the beauty of spring indoors...</p>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article>
+            <h2 class="post-title">Celebrate Summer with Vibrant Flower Bouquets</h2>
+            <p id="post-date">By Blossom Beauty Florist, Posted on June 15, 2024</p>
+            <img src="../img/img2.jpg" alt="Summer Flower Bouquet" class="img-small">
+            <p>Nothing says summer like bright, colorful flowers...</p>
+        </article>
+
+        <!-- Blog Post 3 -->
+        <article>
+            <h2 class="post-title">Fall in Love with Autumnal Floral Decor</h2>
+            <p id="post-date">By Blossom Beauty Florist, Posted on October 10, 2024</p>
+            <img src="../img/img3.png" alt="Autumn Floral Decor">
+            <p>Bring the warmth and richness of fall colors into your home...</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Blossom Beauty Florist - Blog</p>
+    </footer>
+</body>
+</html>

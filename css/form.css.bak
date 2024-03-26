@@ -1,0 +1,172 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and font-family to the entire document */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the navigation */
+nav {
+    margin-top: 10px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Style the main content */
+main {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form */
+form {
+    margin-bottom: 20px;
+}
+
+/* Style fieldsets */
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+/* Style labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style inputs and textareas */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+    display: inline-block; /* Align radio buttons horizontally */
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+@keyframes footerAnimation {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+footer {
+        background-color: #333;
+        color: #fff;
+        padding: 1em 0;
+        text-align: center;
+		animation: footerAnimation 1s infinite alternate; /* Footer animation */
+        }
+		
+nav a {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #555;
+    position: relative;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff6b6b;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6b6b;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+}
+
+@media (min-width: 1024px) {
+    main {
+        max-width: 800px;
+    }
+}
+
+/* For screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    main {
+        max-width: 600px;
+    }
+}
+
+/* For screens between 480px and 767px */
+@media (min-width: 480px) and (max-width: 767px) {
+    main {
+        max-width: 400px;
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 479px) {
+    main {
+        max-width: 300px;
+    }
+}
+}
+}
+}
+}
+
+
